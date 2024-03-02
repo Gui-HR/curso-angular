@@ -1,0 +1,9 @@
+<div class="base-style">
+    <h2>Será?</h2>
+    <P *ngIf="canShow">Mostrando o parágrafo</P>
+    <p *ngIf="cantShow">Escondendo o parágrafo</p>
+    <p *ngIf="species === 'dog'; else anotherAnimal">Cachorro</p>
+    <ng-template #anotherAnimal>
+        <p>Algum animal sem ser cachorro, talvez um gato ou nem isso</p>
+    </ng-template>
+</div>

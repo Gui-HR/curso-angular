@@ -3,3 +3,13 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+body {
+    padding-bottom: 500px;
+}
+
+.base-style {
+    margin-top: 15px;
+    padding: 15px;
+    border-bottom: 1px crimson solid;
+}
