@@ -1,0 +1,22 @@
+<div class="base-style">
+    <div>
+        <div class="carousel">
+            <p class="arrow" (click)="leftTradeColors()"><</p>
+            <div class="view">
+                <div class="colors">
+                    <div class="color" *ngIf="colorSelected[0]" [ngStyle]="{'background-color': 'crimson'}"></div>
+                    <div class="color" *ngIf="colorSelected[1]" [ngStyle]="{'background-color': 'tomato'}"></div>
+                    <div class="color" *ngIf="colorSelected[2]" [ngStyle]="{'background-color': 'aquamarine'}"></div>
+                    <div class="color" *ngIf="colorSelected[3]" [ngStyle]="{'background-color': 'chartreuse'}"></div>
+                </div>
+                <div class="balls">
+                    <div class="ball" [ngStyle]="{'background-color': ballSelected[0]}"></div>
+                    <div class="ball" [ngStyle]="{'background-color': ballSelected[1]}"></div>
+                    <div class="ball" [ngStyle]="{'background-color': ballSelected[2]}"></div>
+                    <div class="ball" [ngStyle]="{'background-color': ballSelected[3]}"></div>
+                </div>
+            </div>
+            <p class="arrow" (click)="rightTradeColors()">></p>
+        </div>
+    </div>
+</div>
